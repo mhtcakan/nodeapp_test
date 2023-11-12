@@ -17,10 +17,12 @@ spec:
       containers:
       - name: nodeserver
         image: memodevops/mynodeapp:latest
+        env:
+        - name: MY_VALUE
+          value: AAAA
         ports:
         - containerPort: 3000
-        
-        
+              
 ---
 
 apiVersion: v1
